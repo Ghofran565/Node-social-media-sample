@@ -26,8 +26,8 @@ export const __dirname = path.dirname(__filename);
 
 /// required app uses \\\
 const app = express();
-app.use(express.static('public'));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('Public')); //TODO check if needed
+app.use(express.static(path.join(__dirname, 'Public')));
 app.use(express.json());
 app.use(morgan('dev'));
 app.use(cors()); //fill with front local path

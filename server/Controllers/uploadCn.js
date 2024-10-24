@@ -22,7 +22,7 @@ export const deleteFile = catchAsync(async (req, res, next) => {
 	const deleteFileName = fileName.split('/').at(-1);
 
 	if (deleteFileName === '*') {
-		return next(new HandleError("Nice try, but you cannot delete everything in this folder.", 403));
+		return next(new HandleError("Nice try, but you cannot delete everything in this folder.", 400));
 	}
 
 	if (!fileName) {
