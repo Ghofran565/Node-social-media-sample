@@ -28,7 +28,7 @@ const userSchema = new mongoose.Schema(
 			required: [true, 'Username is required.'],
 			unique: [true, 'Username was taken.'],
 			minLength: [3, 'Username has to have 3 charecter at least.'],
-			minLength: [32, 'Username has to not have more then 32 charecter.'],
+			maxLength: [32, 'Username has to not have more then 32 charecter.'],
 		},
 		password: {
 			type: String,
