@@ -66,7 +66,3 @@ Contributions are welcome! Please follow these steps:
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
----
-
-This README provides a clear and structured overview of your **Node.js Social Media Sample** project, following the same format as your **Real-time Leaderboard** README. Let me know if you need any further modifications or additions! 
